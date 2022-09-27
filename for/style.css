@@ -1,0 +1,11 @@
+#output {
+    height: 100px;
+    width: 700px;
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 25px;
+    padding: 25px;
+    font-size: 50px;
+    text-align: center;
+}
