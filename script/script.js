@@ -19,9 +19,11 @@ function sottrazione(perdita) {
   }
   if (budget == 0) {
     comunicazione.innerHTML = "Non è rimasto nulla :'(";
+    let bottoni = document.querySelectorAll("button");
+    for (let i = 0; i < bottoni.length; i++) {
+      bottoni[i].disabled = true;
+    }
+
     // alert("Hai esaurito tutto il tuo budget!");
-  }
-  if (budget < 0) {
-    comunicazione.innerHTML = "Sei in negativo!!!";
   }
 }
