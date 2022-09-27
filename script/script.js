@@ -4,17 +4,20 @@
 // creare un output che mostri il budget
 let budget = 100;
 let output = document.getElementById("output");
-
+let comunicazione = document.getElementById("comunicazione");
 function sottrazione(perdita) {
   budget = budget - perdita;
   output.innerHTML = budget;
-  if (budget <== 50) {
-    alert("Sei a metà del tuo budget!");
+  if (budget <= 50) {
+    comunicazione.innerHTML = "Sei a metà del tuo budget!";
+    // alert("Sei a metà del tuo budget!");
   }
   if (budget <= 25) {
-    alert("Hai quasi esaurito il tuo budget!");
+    comunicazione.innerHTML = "Hai quasi esaurito il budget!";
+    // alert("Hai quasi esaurito il tuo budget!");
   }
   if (budget == 0) {
-    alert("Hai esaurito tutto il tuo budget!");
+    comunicazione.innerHTML = "Non è rimasto nulla :'(";
+    // alert("Hai esaurito tutto il tuo budget!");
   }
 }
