@@ -1,0 +1,19 @@
+button {
+    background-color: brown;
+    width: 150px;
+    height: 150px;
+    border: 1px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 50px;
+}
+#output {
+    height: 200px;
+    width: 200px;
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 25px;
+    font-size: 50px;
+}
