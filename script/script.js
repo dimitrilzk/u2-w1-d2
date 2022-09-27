@@ -5,6 +5,7 @@
 let budget = 100;
 let output = document.getElementById("output");
 let comunicazione = document.getElementById("comunicazione");
+
 function sottrazione(perdita) {
   budget = budget - perdita;
   output.innerHTML = budget;
@@ -19,5 +20,8 @@ function sottrazione(perdita) {
   if (budget == 0) {
     comunicazione.innerHTML = "Non è rimasto nulla :'(";
     // alert("Hai esaurito tutto il tuo budget!");
+  }
+  if (budget < 0) {
+    comunicazione.innerHTML = "Sei in negativo!!!";
   }
 }
